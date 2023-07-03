@@ -3,7 +3,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import Product from './Product';
-import Details from './Details';
+import Detailspage from './Details';
 // import AddProduct from './AddProduct';
 import Login from './Login';
 import NavBar from './NavBar';
@@ -19,10 +19,12 @@ const App = () => {
 
       <Routes>
         <Route path="/login" element={<Login />} />
+
         <Route path="/product" element={<Product />} />
-        <Route path="/product/:productId" element={<Details />} />
+        <Route path="/details" element={<Detailspage />} />
+        <Route path="/product/:productId" element={<Detailspage />} />
         {/* <Route path="/add-product" element={<AddProduct />} /> */}
-        <Route path="*" element={<Navigate to="/product" />} />
+        <Route path="*" element={<Navigate to="/details" />} />
       </Routes>
     </Router>
     </div>
