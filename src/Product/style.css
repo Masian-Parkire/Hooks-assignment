@@ -1,0 +1,35 @@
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-title {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.product-price, .product-discount {
+  margin-bottom: 5px;
+}
+
+.button {
+  padding: 8px 16px;
+  background-color: #068f0b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.button:active {
+  background-color: #3e8e41;
+}
+
+
+  
